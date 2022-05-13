@@ -8,82 +8,105 @@
     <meta name="keywords" content="irene, cv, resume">
     <meta name="description" content="This is a website for Irene Beriozkina's CV">
     <title>Irene's CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <img src="avatar.jpg" alt="Irene Beriozkina" width="200">
+    <div class="container">
+        <div id="info">
 
-    <h1>Irene Beriozkina</h1>
-
-    <p> Air Freight Specialist starting <strong>IT-career</strong></p>
-
-    <p> I love <em>traveling and computers</em></p>
-
-    <h4> My social media links:</h4>
-    <a href="https://instagram.com/iflyreney?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/reney.birch" target="_blank">Facebook</a>
-    
-    <h4>My Telegram</h4>
-    <img src="tg.jpg" alt="Irene Beriozkina" width="150">
-
-
-    <h2>My hobbies</h2>
-    <ol>
-        <li>Traveling</li>
-        <li>Skydiving</li>
-        <li>Photographing</li>
-    </ol>
-    <h2>Work experience:</h2>
-    <table>
-        <thead align="left">
-            <tr>
-                <th>Position</th>
-                <th>Place</th>
-                <th>Year</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Air Freight manager</td>
-                <td>Transimperial</td>
-                <td>2014-2017</td>
-            </tr>
-            <tr>
-                <td>Head of Air Freight Department</td>
-                <td>Transimperial</td>
-                <td>2017-2019</td>
-            </tr>
-            <tr>
-                <td>Business development</td>
-                <td>iQ Global Logistics Corp</td>
-                <td>2019-now</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Contact me</h2>
-
-    <form action="/">
-        <div>
-            <label for="name">Name  </label>
-            <br>
-            <input type="name" id="name" placeholder="Enter your full name here">
+            <img src="avatar.jpg" alt="Irene Beriozkina" width="200" id="avatar">
+            <div class="info-text">
+                <h1>Irene Beriozkina</h1>
+                <p> Air Freight Specialist starting <strong>IT-career</strong></p>
+            </div>
         </div>
 
-        <div>
-            <label for="email">Email address</label>
-            <br>
-            <input type="email" id="email" placeholder="Enter your email address">
+        <div class="card main">
+            <h2>Work experience:</h2>
+            <table>
+                <tr>
+                    <th>Position</th>
+                    <th>Place</th>
+                    <th>Year</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Air Freight manager</td>
+                        <td>Transimperial</td>
+                        <td>2014-2017</td>
+                    </tr>
+                    <tr>
+                        <td>Head of Air Freight Department</td>
+                        <td>Transimperial</td>
+                        <td>2017-2019</td>
+                    </tr>
+                    <tr>
+                        <td>Business development</td>
+                        <td>iQ Global Logistics Corp</td>
+                        <td>2019-now</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card linked">
+            <h3>See my LinkedIn profile for detailed experience and education information </h3>
+
+            <a href="https://www.linkedin.com/in/reney-birch-719bab196/" target="_blank"><img
+                src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw"
+                alt="LinkedIn" class="img"></a>
+        </div>
+        <div class="card extra bg-black">
+            <h2>My hobbies</h2>
+            <ol>
+                <li>Traveling</li>
+                <li>Skydiving</li>
+                <li>Photographing</li>
+            </ol>
+        </div>
+        <div class="card links">
+            <h4> My social media:</h4>
+            <div>
+                <a href="https://instagram.com/iflyreney?igshid=YmMyMTA2M2Y=" target="_blank"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"
+                        alt="Instagram" class="img inst"></a>
+                <a href="https://www.facebook.com/reney.birch" target="_blank"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/800px-Facebook_f_logo_%282019%29.svg.png"
+                        alt="Facebook" class="img fb"></a>
+            </div>
+            <div>
+                <h4  class="telegram">My Telegram:</h4>
+                <img src="tg.jpg" alt="Irene's Telegram QR code" width="150" class="img tg">
+            </div>
         </div>
 
-        <div>
-            <label for="message">Message</label>
-            <br>
-            <textarea id="message" cols="20" rows="5" placeholder="Your message"></textarea>
-        </div>
+        <form action="/" class="form">
+            <h2>Or contact me here</h2>
 
-        <button type="submit">Submit your form</button>
-    </form>
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name here">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" placeholder="Enter your email address">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" cols="20" rows="5" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn">Submit your form</button>
+        </form>
+
+    </div>
 </body>
 
 </html>
+
+<!-- result https://reneyb.github.io/resume/08_CV.html -->
